@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import { Title, Navbar, Ball1, Ball2, Github, Repositorio} from './styles';
+import { Github, Repositorio} from './styles';
 
-import Ovini from '../../assets/etes.svg'
 import pointArrow from '../../assets/pointArrow.svg'
 
 import api from '../../services/api';
@@ -17,34 +16,15 @@ const Dashboard: React.FC = () => {
 
   const[ repository, setRepository ] = useState<reposi[]>([]);
 
-    useEffect(()=>{
-      api.get('/users/matheusbalduino/repos').then(response => {
-        console.log(response)
-        setRepository(response.data);
-      })
-    },);
-
+  useEffect(()=>{
+    api.get('/users/matheusbalduino/repos').then(response => {
+      console.log("imprimindo")
+      if(repository.length < 1) setRepository(response.data); // condicional para parar o erro de chamar em um looping infinito
+    })
+  },)
 
   return (
   <>
-  {/* efeitos de pagina */}
-  <Ball1><div> </div></Ball1>
-  <Ball2><div> </div></Ball2>
-
-  {/* corpo da pagina */}
-  <Title>
-    <img src={Ovini} alt="ovni" />
-    <div>Matheus Balduino</div>
-  </Title>
-  <Navbar>
-    <ul id="listaNav">
-      <li id="firstLi"><a href="/#" >Sobre mim</a></li>
-      <li><a href="/#" >Linguagens</a></li>
-      <li><a href="/#" >Experiência</a></li>
-      <li><a href="/#" >Github</a></li>
-      <li><a href="/#" >Formação Acadêmica</a></li>
-    </ul>
-  </Navbar>
   <Github>
     <a href="/#" id="gitbox">
       <div>
