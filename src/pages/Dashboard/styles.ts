@@ -1,77 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export const Title = styled.h1`
-  font: 50px Roboto, sans-serif;
-  color: #D1D1D1;
-  margin-top: 5vh;
-  margin-left: 5vw;
-  display: flex;
-
-  img{
-    margin-right: 5vw;
-    width: 50px;
-  }
-`;
-
-export const Ball1 = styled.div`
-  //características de posição
-  position: absolute;
-  left: 92vw;
-  bottom:80vh;
-  z-index: -1;
-
-  //características de corpo
-  background-color: #262532;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-`;
-
-export const Ball2 = styled.div`
-  //características de posição
-  position: absolute;
-  right: 90vw;
-  bottom:10vh;
-  z-index: -1;
-
-  //características de corpo
-  background-color: #262532;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-`;
-
-export const Navbar = styled.ul`
-  width: 82%;
-  margin-left:5vw;
-  #listaNav{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    }
-
-    #listaNav > li{
-      margin-top: 10vh;
-
-    }
-
-  #listaNav > li > a{
-    text-decoration: none;
-    color: #D1D1D1;
-    font: 20px Roboto, sans-serif;
-    text-align: justify;
-  }
-`;
-
 export const Github = styled.h1`
 
   #gitbox{
     display: flex;
-    margin-top: 10vh;
-    margin-left: 5vw;
+    margin-top: 50px;
+    margin-left: 70px;
     width: 82%;
-    height: 110px;
     background-color: rgba(196, 196, 196, 0.14);
     border-radius: 10px;
 
@@ -86,8 +22,7 @@ export const Github = styled.h1`
   }
 
   img{
-    margin-top: 10px;
-    margin-left: 10px;
+    margin: 10px;
     border-radius: 50%;
     width: 90px;
   }
@@ -110,37 +45,41 @@ export const Github = styled.h1`
   }
 `;
 
-export const Repositorio = styled.h1`
-    margin-left: 5vw;
-    margin-top: 10vh;
+export const Repositorio = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    width: 93%;
+`;
+
+export const Repos = styled.div`
+    margin-top: 50px;
+    margin-left: 70px;
     background-color:  rgba(196, 196, 196, 0.14);
-    width: 82%;
-    height: 200px;
+    width: 40%;
     border-radius: 10px;
 
     a{
-      display: flex;
-      flex-wrap: wrap;
-      text-align: justify;
+      text-align: center;
       text-decoration: none;
       color: #D1D1D1;
       justify-content: space-between;
     }
 
     a > div {
-      font: 16px Roboto, sans-serif;
-      padding-left: 2vw;
-      padding-top: 5vh;
+      font: 14px Roboto, sans-serif;
+      padding: 20px;
+
 
       div{
-        width:40vh;
-        padding-top: 2vh;
-        font: 20px Roboto, sans-serif;
+        width:100%;
+        padding-top: 5px;
+        font: 22px Roboto, sans-serif;
+        color: #FA51FE;
       }
 
     }
     a > div + div{
-      padding-top: 5vh;
+      padding-top: 10px;
     }
 
     &:hover{

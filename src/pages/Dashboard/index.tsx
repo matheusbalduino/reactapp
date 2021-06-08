@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { Github, Repositorio} from './styles';
+import { Github, Repositorio, Repos} from './styles';
 
 import pointArrow from '../../assets/pointArrow.svg'
 
@@ -13,7 +13,7 @@ interface reposi {
 };
 
 const Dashboard: React.FC = () => {
-
+  let data
   const[ repository, setRepository ] = useState<reposi[]>([]);
 
   useEffect(()=>{
@@ -42,8 +42,9 @@ const Dashboard: React.FC = () => {
       </div>
     </a>
   </Github>
+  <Repositorio >
     {repository.map((repos)=>(
-      <Repositorio >
+      <Repos>
        <a href={repos.html_url} id="repository" key={repos.name+1}>
        <div>
          <strong>Nome Projeto:</strong>
@@ -55,12 +56,16 @@ const Dashboard: React.FC = () => {
        </div>
        <div>
          <strong>Data:</strong>
-         <div>{repos.created_at.toLocaleString()}</div>
+         <div>
+         {repos.created_at.replace("T", " ").replace("Z","").split(" ")[0].split("-")[2]}/
+         {repos.created_at.replace("T", " ").replace("Z","").split(" ")[0].split("-")[1]}/
+         {repos.created_at.replace("T", " ").replace("Z","").split(" ")[0].split("-")[0]}
+         </div>
        </div>
      </a>
-     </Repositorio>
+     </Repos>
     ))}
-
+  </Repositorio>
 
   </>
 
