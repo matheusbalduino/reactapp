@@ -18,7 +18,6 @@ const Dashboard: React.FC = () => {
 
   useEffect(()=>{
     api.get('/users/matheusbalduino/repos').then(response => {
-      console.log("imprimindo")
       if(repository.length < 1) setRepository(response.data); // condicional para parar o erro de chamar em um looping infinito
     })
   },)
