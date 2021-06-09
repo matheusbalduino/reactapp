@@ -24,7 +24,7 @@ const Routes: React.FC = () => (
   </Title>
   <Navbar>
     <ul id="listaNav">
-      <li id="firstLi"><Link to="/Sobremim" >Sobre mim</Link></li>
+      <li id="firstLi"><Link to="/" >Sobre mim</Link></li>
       <li><Link to="/Linguagens" >Linguagens</Link></li>
       <li><Link to="/Experiencia" >Experiência</Link></li>
       <li><Link to="/Dashboard" >Github</Link></li>
@@ -36,7 +36,7 @@ const Routes: React.FC = () => (
     <Route path="/Repository" component={Repository} />
     <Route path="/Experiencia" component={Experiencia} />
     <Route path="/Linguagens" component={Linguagem}/>
-    <Route path="/Sobremim" component={Sobremim}/>
+    <Route path="/" component={Sobremim}/>
   </Switch>
   </>
 )
