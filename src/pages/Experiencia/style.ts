@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export const Painel = styled.p`
     margin-left: 5vw;
     margin-top: 5vh;
-    background-color:  rgba(0, 71, 255, 0.19);
+    background-color:  rgba(196, 196, 196, 0.14);
     width: 82%;
     height: 100%;
     border-radius: 10px;
@@ -21,7 +21,9 @@ export const Painel = styled.p`
           font-size: 17px;
         }
      }
-
+     strong{
+      color: #FA51FE;
+     }
     }
     &:hover{
         transform: translateX(3px);

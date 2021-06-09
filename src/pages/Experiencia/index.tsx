@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Painel} from './style'
+import { Painel } from './style'
 
 const Experiencia: React.FC = () => (
   <>

@@ -26,7 +26,7 @@ const Dashboard: React.FC = () => {
   return (
   <>
   <Github>
-    <a href="/#" id="gitbox">
+    <a href="/Sobremim" id="gitbox">
       <div>
         <img src="https://avatars.githubusercontent.com/u/55632437?v=4" alt="" />
       </div>

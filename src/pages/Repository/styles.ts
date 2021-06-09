@@ -70,11 +70,13 @@ export const Navbar = styled.ul`
 export const Painel = styled.p`
     margin-left: 5vw;
     margin-top: 5vh;
-    background-color:  rgba(0, 71, 255, 0.19);
+    background-color:  rgba(196, 196, 196, 0.14);
     width: 82%;
     height: 100%;
     border-radius: 10px;
-
+    strong{
+      color: #FA51FE;
+    }
     p{
      padding: 3%;
      color: #D1D1D1;

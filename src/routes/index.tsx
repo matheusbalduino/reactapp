@@ -4,6 +4,8 @@ import {Switch, Route, Link} from 'react-router-dom'
 import Dashboard from '../pages/Dashboard';
 import Experiencia from '../pages/Experiencia';
 import Repository from '../pages/Repository';
+import Linguagem from '../pages/Linguagem';
+import Sobremim from '../pages/Sobremim';
 
 
 import { Title, Navbar, Ball1, Ball2 } from './styles'
@@ -22,8 +24,8 @@ const Routes: React.FC = () => (
   </Title>
   <Navbar>
     <ul id="listaNav">
-      <li id="firstLi"><Link to="/#" >Sobre mim</Link></li>
-      <li><Link to="/#" >Linguagens</Link></li>
+      <li id="firstLi"><Link to="/Sobremim" >Sobre mim</Link></li>
+      <li><Link to="/Linguagens" >Linguagens</Link></li>
       <li><Link to="/Experiencia" >Experiência</Link></li>
       <li><Link to="/Dashboard" >Github</Link></li>
       <li><Link to="/Repository" >Formação Acadêmica</Link></li>
@@ -33,6 +35,8 @@ const Routes: React.FC = () => (
     <Route path="/Dashboard" exact component={Dashboard} />
     <Route path="/Repository" component={Repository} />
     <Route path="/Experiencia" component={Experiencia} />
+    <Route path="/Linguagens" component={Linguagem}/>
+    <Route path="/Sobremim" component={Sobremim}/>
   </Switch>
   </>
 )

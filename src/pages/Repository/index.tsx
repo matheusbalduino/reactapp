@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Painel} from './styles';
+import { Painel } from './styles';
 
 const Formacao: React.FC = () => (
   <>
