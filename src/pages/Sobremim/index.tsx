@@ -29,7 +29,7 @@ const Sobremim: React.FC = () => (
       </div>
     </a>
   </Github>
-  <iframe style={{"border": "none", "marginLeft": "6.5vw", "marginTop": "50px", "borderRadius":"10px"}} width="753" height="480" src="https://www.youtube.com/embed/lGHXVqfJf6A"
+  <iframe style={{"border": "none", "marginLeft": "7%", "marginTop": "50px", "borderRadius":"10px"}} width="790" height="480" src="https://www.youtube.com/embed/lGHXVqfJf6A"
   title="YouTube video player"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"/>
   <Containerpainel>
