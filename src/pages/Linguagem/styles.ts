@@ -5,6 +5,9 @@ export const Repositorio = styled.div`
     display: flex;
     flex-wrap: wrap;
     width: 90%;
+    @media(max-width:600px){
+      display: contents;
+    }
 `;
 
 export const Repos = styled.div`
@@ -17,8 +20,12 @@ export const Repos = styled.div`
     text-align: center;
     padding: 20px;
 
+    @media(max-width:600px){
+      width: 70%;
+      margin-left: 35%;
+    }
     #boot{
-      padding-top: 30px;
+      padding-top: 10px;
       width: 100px;
     }
     #html{
@@ -30,7 +37,7 @@ export const Repos = styled.div`
       width: 160px;
     }
     #laravel{
-      padding-top: 30px;
+      padding-top: 10px;
       width: 180px;
     }
     #figma{
