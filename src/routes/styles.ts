@@ -8,9 +8,25 @@ export const Title = styled.h1`
   margin-left: 5vw;
   display: flex;
 
+  @media(max-width:600px){
+      margin-top: 10vh;
+      margin-left: 40vw;
+      margin-bottom: 5vh;
+      text-align: center;
+      flex-direction: column;
+    }
+
   img{
     margin-right: 5vw;
     width: 50px;
+
+    @media(max-width:600px){
+      width: 70px;
+      margin-left: 18vw;
+      text-align:center;
+      margin-bottom: 5vh;
+    }
+
   }
 `;
 
@@ -49,17 +65,35 @@ export const Navbar = styled.ul`
     list-style-type: none;
     display: flex;
     justify-content: space-between;
+
+      @media(max-width:600px){
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 35%;
+        width:100%;
+      }
     }
 
     #listaNav > li{
       margin-top: 10vh;
+      @media(max-width:600px){
+       margin-top: 2vh;
+       width: 100%;
+       height: 50px;
+       text-align: center;
+       align-items: center;
+       background-color: rgba(196, 196, 196, 0.14);
+       border-radius: 10px;
 
+      }
     }
+
 
   #listaNav > li > a{
     text-decoration: none;
     color: #D1D1D1;
     font: 20px Roboto, sans-serif;
     text-align: justify;
+
   }
 `;

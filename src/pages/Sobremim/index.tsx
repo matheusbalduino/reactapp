@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Painel, Github, Containerpainel } from './style'
+import { Painel, Github, Containerpainel, Video} from './style'
 
 import PerfilFoto from '../../assets/perfil.jpg'
 
@@ -29,9 +29,11 @@ const Sobremim: React.FC = () => (
       </div>
     </a>
   </Github>
-  <iframe style={{"border": "none", "marginLeft": "7%", "marginTop": "50px", "borderRadius":"10px"}} width="790" height="480" src="https://www.youtube.com/embed/lGHXVqfJf6A"
+  <Video>
+  <iframe id="video" style={{"border": "none", "marginLeft": "7%", "marginTop": "50px", "borderRadius":"10px"}} width="82%" height="480" src="https://www.youtube.com/embed/lGHXVqfJf6A"
   title="YouTube video player"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"/>
+  </Video>
   <Containerpainel>
   <Painel>
     <p>

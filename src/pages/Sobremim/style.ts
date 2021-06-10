@@ -2,7 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 
 
-export const Github = styled.h1`
+export const Github = styled.div`
+
 
   #gitbox{
     display: flex;
@@ -16,6 +17,12 @@ export const Github = styled.h1`
     color: #D1D1D1;
     font: 18px Roboto, sans-serif;
 
+    @media(max-width: 600px){
+      flex-direction: column;
+      width: 100%;
+      margin-left: 27%;
+    }
+
     &:hover{
       transform: translateX(5px);
     }
@@ -24,6 +31,9 @@ export const Github = styled.h1`
   a > div {
     padding-left: 20px;
     padding-top: 20px;
+    @media(max-width: 600px){
+      padding-left: 27%;
+    }
   }
 
   img{
@@ -48,14 +58,32 @@ export const Github = styled.h1`
       padding-top: 10px;
     }
   }
-`;
 
+`;
+export const Video = styled.div`
+
+    @media(max-width:600px){
+      width:100%;
+      margin-left:20%;
+    }
+    #video{
+      @media(max-width:600px){
+      width:100%;
+      margin-left:20%;
+    }
+    }
+`;
 export const Containerpainel = styled.div`
   text-align: center;
   align-items: center;
   margin-top: 40px;
   margin-left: 60px;
   display: flex;
+  @media(max-width:600px){
+      width:150%;
+      margin-left:0%;
+      flex-direction: column;
+    }
 `;
 
 export const Painel = styled.p`
