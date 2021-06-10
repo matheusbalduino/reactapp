@@ -9,6 +9,10 @@ export const Painel = styled.p`
     height: 100%;
     border-radius: 10px;
 
+    @media(max-width:600px){
+      margin-left: 35%;
+    }
+
     p{
      padding: 3%;
      color: #D1D1D1;

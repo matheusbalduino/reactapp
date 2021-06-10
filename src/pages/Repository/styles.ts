@@ -74,6 +74,9 @@ export const Painel = styled.p`
     width: 82%;
     height: 100%;
     border-radius: 10px;
+    @media(max-width:600px){
+      margin-left: 35%;
+    }
     strong{
       color: #FA51FE;
     }
