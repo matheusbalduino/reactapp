@@ -79,12 +79,11 @@ export const Navbar = styled.ul`
       @media(max-width:600px){
        margin-top: 2vh;
        width: 100%;
-       height: 50px;
        text-align: center;
        align-items: center;
        background-color: rgba(196, 196, 196, 0.14);
        border-radius: 10px;
-
+        padding: 13px;
       }
     }
 
