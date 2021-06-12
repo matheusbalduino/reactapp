@@ -32,7 +32,7 @@ export const Github = styled.div`
     padding-left: 20px;
     padding-top: 20px;
     @media(max-width: 600px){
-      padding-left: 27%;
+      text-align: center;
     }
   }
 
@@ -42,7 +42,7 @@ export const Github = styled.div`
   }
 
   #Nascimento{
-    margin-left: 10px;
+    text-align: center;
     padding: 20px;
   }
 
